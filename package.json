@@ -1,0 +1,30 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Node.js project utilizing OOP",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tallen1985/10-Homework-Team-Generator.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "OOP",
+    "JS",
+    "Test",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Troy Allen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tallen1985/10-Homework-Team-Generator/issues"
+  },
+  "homepage": "https://github.com/tallen1985/10-Homework-Team-Generator#readme"
+}
