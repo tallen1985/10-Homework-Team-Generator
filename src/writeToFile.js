@@ -4,8 +4,26 @@ const writeToFile = team => {
     const file = './dist/index.html';
     const html = generateHTML(team)
 
-    fs.writeFile(file, html, (err) => err ? console.log(err) : console.log('File Successfully Written'));
+    fs.writeFile(file, html, (err) => {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log(roster(team))
+        } 
+    })
+}
+
+const roster = (team) => {
+    let rosterString = 'Team roster created with ';
+    for (let x = 0; x < team.length; x++) {
+        if (x == team.length - 1) {
+            rosterString += `and ${team[x].name}`
+        } else {
+            rosterString += `${team[x].name}, `
+        }
     }
+    return rosterString;
+}
 
 const employeeCard = (team) => {
     let htmlCards = ''

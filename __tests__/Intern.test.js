@@ -22,7 +22,7 @@ describe('Intern Class', () => {
             const id = 'testID';
             const email = 'testEmail';
 
-            const expected = new Employee(name, id, email).getName();
+            const expected = new Intern(name, id, email).getName();
 
             expect(name).toEqual(expected)
         });
@@ -31,7 +31,7 @@ describe('Intern Class', () => {
             const id = 'testID';
             const email = 'testEmail';
 
-            const expected = new Employee(name, id, email).getID();
+            const expected = new Intern(name, id, email).getID();
 
             expect(id).toEqual(expected)
         });
@@ -40,9 +40,19 @@ describe('Intern Class', () => {
             const id = 'testID';
             const email = 'testEmail';
 
-            const expected = new Employee(name, id, email).getEmail();
+            const expected = new Intern(name, id, email).getEmail();
 
             expect(email).toEqual(expected)
+        });
+        it('should return school correctly when using getSchool()', () => {
+            const name = 'testName';
+            const id = 'testID';
+            const email = 'testEmail';
+            const school = 'testSchool';
+
+            const expected = new Intern(name, id, email, school).getSchool();
+
+            expect(school).toEqual(expected)
         });
     })
 });

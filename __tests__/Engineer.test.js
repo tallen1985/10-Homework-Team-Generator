@@ -22,7 +22,7 @@ describe('Engineer Class', () => {
             const id = 'testID';
             const email = 'testEmail';
 
-            const expected = new Employee(name, id, email).getName();
+            const expected = new Engineer(name, id, email).getName();
 
             expect(name).toEqual(expected)
         });
@@ -31,7 +31,7 @@ describe('Engineer Class', () => {
             const id = 'testID';
             const email = 'testEmail';
 
-            const expected = new Employee(name, id, email).getID();
+            const expected = new Engineer(name, id, email).getID();
 
             expect(id).toEqual(expected)
         });
@@ -40,9 +40,19 @@ describe('Engineer Class', () => {
             const id = 'testID';
             const email = 'testEmail';
 
-            const expected = new Employee(name, id, email).getEmail();
+            const expected = new Engineer(name, id, email).getEmail();
 
             expect(email).toEqual(expected)
         });
+        it('should return Github username when getGithub() is called', () => {
+            const name = 'testName';
+            const id = 'testID';
+            const email = 'testEmail';
+            const github = "testGithub";
+
+            const expected = new Engineer(name, id, email, github).getGitHub()
+
+            expect(github).toEqual(expected);
+        })
     })
 });

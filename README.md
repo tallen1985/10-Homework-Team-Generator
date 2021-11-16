@@ -17,13 +17,22 @@
   node index.js
       
   ## Contributing
-  With permission
+ Open Source
   ## License
   This project is protected under MIT License.
+
+  ## Testing
+  Npm test
 
 [License Documentation](https://opensource.org/licenses/MIT)
   ## Questions
   [Ask me on my github profile](http://www.github.com/tallen1985)
   
   Any additional questions, reach me at my email jake.allen@me.com
+
+  ## Screenshot
+  <img src="./screenshot.jpg">
+
+  ## Link to Video
+  [Performance Video](https://drive.google.com/file/d/1O1Vj478-galJBPbh3s8HmGKeaXZajxgz/view)
   

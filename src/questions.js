@@ -25,7 +25,7 @@ const questions = {
             name: 'email',
             type: 'input',
             message: 'Email Address?',
-            validate: val => /A[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi.test(val) ? true: console.log('Please Enter valid Email')
+            validate: val => /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi.test(val) ? true: console.log('Please Enter valid Email')
         },
         {
             name: 'officeNumber',
@@ -58,7 +58,7 @@ const questions = {
             name: 'email',
             type: 'input',
             message: "Intern's Email Address?",
-            validate: val => /A[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi.test(val) ? true: console.log('Please Enter valid Email')
+            validate: val => /[a-zA-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi.test(val) ? true: console.log('Please Enter valid Email')
         },
         {
             name: 'school',
@@ -90,7 +90,7 @@ const questions = {
             name: 'email',
             type: 'input',
             message: "Engineer's email address?",
-            validate: val => /A[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi.test(val) ? true: console.log('Please Enter valid Email')
+            validate: val => /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi.test(val) ? true: console.log('Please Enter valid Email')
         },
         {
             name: 'gitHub',
