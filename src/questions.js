@@ -1,5 +1,7 @@
+//import modules
 const inquirer = require("inquirer");
 
+//questions object with specific questions based on task
 const questions = {
     manager: [
         {

@@ -1,3 +1,4 @@
+//import modules
 const inquirer = require('inquirer')
 const Intern = require('./lib/intern');
 const Manager = require('./lib/manager')
@@ -5,10 +6,11 @@ const Engineer = require('./lib/engineer')
 const questions = require('./src/questions');
 const {writeToFile} = require('./src/writeToFile')
 
-
+//declare globals
 let team = [];
 let addTeamMember = '';
 
+// allows creation of new members (in a loop for user decided # of members)
 let newMember = () => {
     if (addTeamMember === 'Intern') {
         inquirer.prompt(questions.intern).then(internAnswers => {
@@ -34,7 +36,7 @@ let newMember = () => {
 
 }
 
-
+//initiate questions
 inquirer.prompt(questions.manager)
 
     .then(managerAnswers => {

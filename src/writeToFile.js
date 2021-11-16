@@ -1,5 +1,7 @@
+//import modules
 const fs = require('fs')
 
+//takes finished html template and writes to file.
 const writeToFile = team => {
     const file = './dist/index.html';
     const html = generateHTML(team)
@@ -13,6 +15,7 @@ const writeToFile = team => {
     })
 }
 
+//creates successful operation string
 const roster = (team) => {
     let rosterString = 'Team roster created with ';
     for (let x = 0; x < team.length; x++) {
@@ -25,6 +28,7 @@ const roster = (team) => {
     return rosterString;
 }
 
+//creates HTML specific to each team member
 const employeeCard = (team) => {
     let htmlCards = ''
     let icon = '';
@@ -56,6 +60,7 @@ const employeeCard = (team) => {
     return htmlCards;
 }
 
+//generates HTML 
 const generateHTML = (team) => {
     return  `<!DOCTYPE html>
     <html lang="en">
