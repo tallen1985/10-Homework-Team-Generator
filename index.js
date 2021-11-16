@@ -38,8 +38,8 @@ let newMember = () => {
 inquirer.prompt(questions.manager)
 
     .then(managerAnswers => {
-        const {name, employeeID, email, officeNumber, addAnother} = managerAnswers
-        const manager = new Manager(name, employeeID, email, officeNumber)
+        const {teamName, name, employeeID, email, officeNumber, addAnother} = managerAnswers
+        const manager = new Manager(teamName, name, employeeID, email, officeNumber)
         team.push(manager)
         addTeamMember = addAnother;
     }).then(() => {

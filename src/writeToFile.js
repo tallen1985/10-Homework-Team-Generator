@@ -50,7 +50,7 @@ const generateHTML = (team) => {
     </head>
     <body class="bg-info">
         <header class="container col-10 mx-auto bg-light text-center my-5 border rounded">
-            <h1>My Team</h1>
+            <h1>${team[0].teamName}</h1>
         </header>
         <main class="d-flex col-10 mx-auto flex-wrap justify-content-around">
     
